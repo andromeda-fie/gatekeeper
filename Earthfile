@@ -5,9 +5,9 @@ WORKDIR /gatekeeper
 test:
 	COPY go.mod ./
 	COPY . ./
-	RUN go test .\...
+	RUN go test ./...
 
 build:
 	COPY go.mod ./
 	COPY . ./
-	RUN go build
+	RUN go build ./...
